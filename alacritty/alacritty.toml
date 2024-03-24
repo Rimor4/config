@@ -1,0 +1,15 @@
+import = ["~/AppData/Roaming/alacritty/themes/themes/Mariana.toml"]
+
+[font]
+size = 14
+normal.family = "Consolas"
+
+[window]
+padding = {x = 10, y = 10}
+position = {x = 300, y = 150}
+dimensions = {columns = 120, lines = 31}
+opacity = 1
+
+[shell]
+program = "C:/Windows/System32/wsl.exe"
+args = ["-d", "Ubuntu-22.04", "-u", "lucas", "zsh"]
