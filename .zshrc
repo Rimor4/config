@@ -11,16 +11,14 @@ fi
 # Path to your oh-my-zsh installation.
 export ZSH="$HOME/.oh-my-zsh"
 
+alias tdlr="tldr"
+
 alias ll="ls -lah"
 alias up="cd .."
 
 alias gig="git log --all --graph --decorate --oneline"
-<<<<<<< HEAD
-# 指定远程分支为当前本地分支的上游分支
-alias gisu="git branch --set-upstream-to=origin/master"
-=======
-alias giss="git status -s"
->>>>>>> f4f910f (update)
+alias giga="git log --all --graph --decorate"
+alias gis="git status"
 alias gica="git commit --amend"
 alias gican="git commit --amend --no-edit"
 

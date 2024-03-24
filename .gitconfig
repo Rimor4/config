@@ -1,0 +1,18 @@
+[user]
+	email = 2590548416@qq.com
+	name = Locus
+[https]
+	proxy = socks5://127.0.0.1:7891
+#[diff]
+	#external = git_diff_wrapper
+#[pager]
+	#diff =
+#[color]
+	#ui = auto
+#[merge]
+	#tool = threesome
+#[mergetool "threesome"]
+	#cmd = "vim -f $BASE $LOCAL $REMOTE $MERGED -c 'ThreesomeInit'"
+	#trustExitCode = true
+[core]
+	excludesfile = /home/lucas/.gitignore
