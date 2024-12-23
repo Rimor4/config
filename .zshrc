@@ -12,12 +12,12 @@ fi
 export ZSH="$HOME/.oh-my-zsh"
 
 alias q="exit"
-alias ll="ls -lah"
 alias up="cd .."
 
 alias gig="git log --all --graph --decorate --oneline"
 alias giga="git log --all --graph --decorate"
 alias gis="git status"
+alias gils="git ls-files"
 alias gica="git commit --amend"
 alias gican="git commit --amend --no-edit"
 
@@ -51,3 +51,6 @@ export PATH="/opt/rr-5.7.0-Linux-x86_64/bin:$PATH"
 mcd() {
 	mkdir -p "$1" && cd "$1"
 }
+
+# opam configuration
+[[ ! -r /home/lucas/.opam/opam-init/init.zsh ]] || source /home/lucas/.opam/opam-init/init.zsh  > /dev/null 2> /dev/null

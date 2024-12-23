@@ -5,9 +5,9 @@ nnoremap tj  :tabnext<CR>
 nnoremap tk  :tabprev<CR>
 nnoremap tc  :tabclose<CR>
 
-vnoremap <C-y> : !/mnt/c/Windows/System32/clip.exe<cr>u''
-noremap <C-o> :read !/mnt/c/Windows/System32/paste.exe <cr>
-noremap! <C-o> <esc>:read !/mnt/c/Windows/System32/paste.exe <cr>
+vnoremap <C-y> :w !C:\Windows\System32\clip.exe<cr>u''
+noremap <C-o> :read !C:\Windows\System32\paste.exe <cr>
+noremap! <C-o> <esc>:read !C:\Windows\System32\paste.exe <cr>
 
 let mapleader = ","
 
@@ -36,7 +36,7 @@ set backspace=indent,eol,start
 " Maps space to colon, time saver
 nmap <space> :
 
-set autoindent
+	set autoindent
 set hidden
 
 set ignorecase
