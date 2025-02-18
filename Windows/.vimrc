@@ -198,19 +198,6 @@ function! s:show_documentation()
 	endif
 endfunction
 
-" Track the engine.
-Plug 'SirVer/ultisnips'
-" Snippets are separated from the engine. Add this if you want them:
-Plug 'honza/vim-snippets'
-" ES2015 code snippets (Optional)
-Plug 'epilande/vim-es2015-snippets'
-" React code snippets
-Plug 'epilande/vim-react-snippets'
-
-let g:UltiSnipsExpandTrigger="<c-l>"
-let g:UltiSnipsJumpForwardTrigger="<c-b>"
-let g:UltiSnipsJumpBackwardTrigger="<c-z>"
-
 " FZF
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 Plug 'junegunn/fzf.vim'
