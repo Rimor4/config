@@ -11,6 +11,7 @@ fi
 # Path to your oh-my-zsh installation.
 export ZSH="$HOME/.oh-my-zsh"
 
+alias lla="ls -lah"
 alias q="exit"
 alias up="cd .."
 
@@ -33,7 +34,16 @@ bindkey -v
 # oh-my-zsh theme
 ZSH_THEME="powerlevel10k/powerlevel10k"
 
-plugins=(git web-search jsontools z vi-mode zsh-syntax-highlighting zsh-autosuggestions)
+plugins=(
+	git
+	web-search
+	jsontools
+	z
+	vi-mode
+	zsh-syntax-highlighting
+	zsh-autosuggestions
+	fzf-tab
+)
 
 # <Ctrl+" "> 接受 auto-suggestion 的补全建议
 source ~/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
@@ -54,3 +64,7 @@ mcd() {
 
 # opam configuration
 [[ ! -r /home/lucas/.opam/opam-init/init.zsh ]] || source /home/lucas/.opam/opam-init/init.zsh  > /dev/null 2> /dev/null
+
+# Path to opencv4
+export OpenCV_DIR="/usr/lib/x86_64-linux-gnu/cmake/opencv4"
+export CMAKE_PREFIX_PATH="$CMAKE_PREFIX_PATH:$OpenCV_DIR"
