@@ -1,0 +1,27 @@
+[user]
+	name = Rimor
+	email = 2590548416@qq.com
+[core]
+	editor = \"C:\\Users\\lenovo\\AppData\\Local\\Programs\\Microsoft VS Code\\bin\\code\" --wait
+	compression = 9
+	pager = cat
+	longpaths = true
+[safe]
+[credential "helperselector"]
+	selected = <no helper>
+[pull]
+	rebase = false
+[http]
+	postBuffer = 1048576000
+	sslVerify = false
+[pack]
+	deltaCacheSize = 2047m
+	packSizeLimit = 2047m
+	windowMemory = 512m
+[credential]
+	helper = manager
+[filter "lfs"]
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+	required = true
