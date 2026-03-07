@@ -29,9 +29,6 @@ Set-PSReadLineOption -PredictionViewStyle ListView
 # 智能 cd
 Invoke-Expression (& { (zoxide init powershell) -join "`n" })
 
-$env:HTTP_PROXY="http://127.0.0.1:7890"
-$env:HTTPS_PROXY="http://127.0.0.1:7890"
+$env:HTTP_PROXY = "http://127.0.0.1:7890"
+$env:HTTPS_PROXY = "http://127.0.0.1:7890"
 
-# OPENSPEC:START - OpenSpec completion (managed block, do not edit manually)
-. "C:\Users\wangfengqi01\Documents\PowerShell\OpenSpecCompletion.ps1"
-# OPENSPEC:END
