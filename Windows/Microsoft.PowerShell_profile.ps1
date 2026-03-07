@@ -1,3 +1,6 @@
+#改成实际路径
+$env:POSH_THEMES_PATH = "C:\Program Files\WindowsApps\ohmyposh.cli_29.7.1.0_x64__96v55e8n804z4\themes" 
+
 # 主题初始化（选择喜欢的主题）
 oh-my-posh init pwsh --config "$env:POSH_THEMES_PATH\hotstick.minimal.omp.json" | Invoke-Expression
 
@@ -28,3 +31,7 @@ Invoke-Expression (& { (zoxide init powershell) -join "`n" })
 
 $env:HTTP_PROXY="http://127.0.0.1:7890"
 $env:HTTPS_PROXY="http://127.0.0.1:7890"
+
+# OPENSPEC:START - OpenSpec completion (managed block, do not edit manually)
+. "C:\Users\wangfengqi01\Documents\PowerShell\OpenSpecCompletion.ps1"
+# OPENSPEC:END

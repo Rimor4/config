@@ -4,7 +4,8 @@
 
 ### Powershell
 
-将`Microsoft.PowerShell_profile.ps1`复制到在pwsh中运行`$PROFILE`得到的路径
+1. 将`Microsoft.PowerShell_profile.ps1`复制到在pwsh中运行`$PROFILE`得到的路径
+2. 修改`Microsoft.PowerShell_profile.ps1`第一行`$env:POSH_THEMES_PATH`为实际安装的oh-my-zsh的主题目录
 
 ### Vim
 
